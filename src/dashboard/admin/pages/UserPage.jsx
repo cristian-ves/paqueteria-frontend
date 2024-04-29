@@ -57,7 +57,6 @@ export const UserPage = () => {
                 activo: checked,
                 rol: parseInt(role),
             };
-            console.log(body);
             await paqueteriaApi.put("/usuario", body);
             Swal.fire("User updated succesfully!", "", "success");
         } catch (error) {

@@ -36,7 +36,7 @@ export const AppRouter = () => {
         <Routes>
             <Route
                 path="/auth/login"
-                element={<Navigate to={dashboardRoute} replace />}
+                element={<Navigate to={dashboardRoute + "/"} replace />}
             />
 
             {user.rol === 1 && (
